@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Mamachachas.Models
 {
-	public class Pie
+	public class Bread
 	{
         public int BreadId { get; set; }
         public string Name { get; set; }
