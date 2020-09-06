@@ -1,0 +1,20 @@
+﻿@model BreadListViewModel
+
+
+<h1>@Model.CurrentCategory</h1>
+
+@foreach (var bread in Model.Bread)
+{
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="thumbnail">
+            <img src="@bread.ImageThumbnailUrl" alt="">
+            <div class="caption">
+                <h3 class="pull-right">@bread.Price.ToString("c")</h3>
+                <h3>
+                    <a>@bread.Name</a>
+                </h3>
+                <p>@bread.ShortDescription</p>
+            </div>
+        </div>
+    </div>
+}
